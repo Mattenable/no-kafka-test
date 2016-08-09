@@ -16,6 +16,7 @@ const strategies = [{
 }];
 
 bluebird.try(() => {
+    console.log('STARTING');
     groupConsumer.init(strategies);
 })
 .timeout(1000)
