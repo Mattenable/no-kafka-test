@@ -1,0 +1,14 @@
+{
+  "name": "no-kafka-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "no-kafka": "^2.6.0"
+  }
+}
