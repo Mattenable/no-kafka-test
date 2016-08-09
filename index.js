@@ -20,8 +20,13 @@ bluebird.try(() => {
     groupConsumer.init(strategies);
 })
 .timeout(1000)
-.then(() => {
-    console.log('THIS PRINTS');
+.then((returnVal) => {
+    if(returnVal) {
+        console.log('EVERYTHING OK');   
+    } else {
+        console.log('FAILED, NO ERROR THROWN');
+    }
+    
     groupConsumer.end();
 })
 .catch(() => {
